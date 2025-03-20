@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/predict', { // Đảm bảo đường dẫn đúng với endpoint Flask
+            const response = await fetch('/predict', { // Đảm bảo đường dẫn đúng với endpoint Flask
                 method: 'POST',
                 body: formData
             });
