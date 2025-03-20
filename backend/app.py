@@ -3,7 +3,7 @@ from PIL import Image
 import io
 import torch
 from torchvision import transforms
-from backend.model import SimpleCNN  # Import từ backend cho đúng cấu trúc
+from .model import SimpleCNN  # Import từ backend cho đúng cấu trúc
 import numpy as np
 from flask_cors import CORS
 import os  # Thêm import os để lấy biến môi trường
