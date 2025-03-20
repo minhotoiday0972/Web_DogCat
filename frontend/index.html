@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Phân loại Mèo/Chó</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <h1>Ứng dụng Phân loại Mèo/Chó</h1>
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="predictButton" disabled>Dự đoán</button>
+            <div id="previewImage"></div>
+        </div>
+        <div id="resultSection" class="hidden">
+            <h2>Kết quả dự đoán:</h2>
+            <div id="predictionResult"></div>
+            <div id="confidenceLevel"></div>
+        </div>
+        <div id="errorSection" class="hidden">
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif; /* Thay đổi font chữ toàn trang */
+    background-color: #f4f4f4; /* Màu nền trang web nhạt */
+    color: #333; /* Màu chữ chính */
+    margin: 0; /* Loại bỏ margin mặc định của body */
+    padding: 0; /* Loại bỏ padding mặc định của body */
+    display: flex; /* Sử dụng flexbox cho layout tổng thể */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    min-height: 100vh; /* Đảm bảo body chiếm toàn bộ chiều cao viewport */
+}
+
+.container {
+    font-family: sans-serif; /* Giữ lại font-family này cho container nếu cần thiết */
+    max-width: 600px;
+    padding: 30px; /* Tăng padding */
+    background-color: #fff; /* Màu nền container trắng */
+    border-radius: 8px; /* Bo tròn góc container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+    text-align: center;
+}
+
+h1 {
+    color: #007bff; /* Màu tiêu đề chính (xanh dương) */
+    margin-bottom: 20px; /* Tăng khoảng cách dưới tiêu đề */
+}
+
+h2 {
+    color: #28a745; /* Màu tiêu đề phụ (xanh lá cây) */
+    margin-top: 20px; /* Tăng khoảng cách trên tiêu đề phụ */
+}
+
+.upload-section {
+    margin-bottom: 30px; /* Tăng khoảng cách dưới khu vực upload */
+}
+
+#previewImage {
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng container cha */
+    max-height: 200px; /* Giới hạn chiều cao tối đa là 200px */
+    margin: 15px auto;
+    border: 1px solid #ddd; /* Thêm border cho ảnh preview */
+    border-radius: 4px; /* Bo tròn góc ảnh preview */
+    padding: 5px; /* Thêm padding bên trong border */
+    background-color: #eee; /* Màu nền khi chưa có ảnh */
+    display: flex; /* Sử dụng flexbox để canh giữa nội dung */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ẩn phần ảnh vượt quá khung */
+}
+
+#previewImage img {
+    max-width: 100%; /* Đảm bảo ảnh bên trong không vượt quá kích thước #previewImage */
+    max-height: 100%;
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+    object-fit: contain; /* Đảm bảo ảnh vừa vặn, có thể có khoảng trắng */
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold; /* In đậm thông báo lỗi */
+    margin-top: 10px; /* Thêm khoảng cách trên thông báo lỗi */
+}
